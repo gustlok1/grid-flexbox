@@ -20,16 +20,25 @@ a {
     text-decoration: none;
     color: white;
 }
-.header{
+.secheader{
+    width: 100%;    
     background-color: #1d1a20;
+}
+.header{
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
     flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
 }
+
 .menu{
     display: flex;
+}
+.menu > ul{
+    width: 300px;
 }
 .menu li{
     margin-left: 10px;
@@ -74,7 +83,7 @@ significa "a partir do quinto item: estilização"
     align-items: center;
 }
 
-.grid1 > div.deusa{
+.grid1 > div.anuncio{
     grid-column: 1;
     grid-row: 2 / 5; /*da linha 2 até a 5*/
     display: block;
@@ -87,7 +96,7 @@ significa "a partir do quinto item: estilização"
     .grid1 > div:nth-child(n + 4){
         display: block;
     }
-    .grid1 > div.deusa{
+    .grid1 > div.anuncio{
         grid-column: auto;
         grid-row:auto;
         order: -1; /*para posicionar no primeiro elemento*/
